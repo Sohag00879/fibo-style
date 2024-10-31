@@ -1,0 +1,165 @@
+/* Container Wrapper */
+.section-with-fibo-slider .content-wrapper {
+    box-sizing: border-box !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Main Plugin Styling */
+.fibo-plugin {
+    background-color: #1e2a38; /* Dark background for a modern, professional look */
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    color: #ffffff; /* Sets content text color */
+    margin: 20px 0;
+}
+
+/* Hide Unwanted Elements */
+.fibo-plugin .summary-item-list-container.sqs-gallery-container,
+.fibo-plugin .summary-block-header {
+    display: none;
+}
+
+/* Main Image Slide Styling */
+.fibo-plugin .image-slide {
+    background: #34495e; /* Subtle contrast for image slide */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.fibo-plugin .image-slide:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Wrapper Styling */
+.fibo-plugin .image-slide-inner {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.fibo-plugin .image-slide-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Headings and Text */
+.fibo-plugin h3 {
+    font-size: 1.4em;
+    color: #ffffff; /* Matches text color to background */
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.fibo-plugin p {
+    font-size: 1em;
+    color: #d1d1d1; /* Softer contrast text color */
+    margin: 0;
+    line-height: 1.5;
+}
+
+.fibo-plugin p a {
+    border-bottom: 1px solid #1abc9c;
+    color: #1abc9c;
+    transition: color 0.3s ease;
+}
+
+.fibo-plugin p a:hover {
+    color: #16a085;
+}
+
+/* Description and Author Info Styling */
+.fibo-plugin .desc-wrapper {
+    margin-bottom: 25px;
+}
+
+.fibo-plugin .author-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.fibo-plugin .author-info .image-slide-inner {
+    margin-right: 12px;
+}
+
+/* Swiper Controls */
+.fibo-control-wrapper {
+    height: 3em;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fibo-control-wrapper .fibo-control .swiper-button-next,
+.fibo-control-wrapper .fibo-control .swiper-button-prev {
+    color: #1abc9c; /* Matches control colors */
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    margin: 0 5px;
+}
+
+.fibo-control-wrapper .fibo-control .swiper-button-next:hover,
+.fibo-control-wrapper .fibo-control .swiper-button-prev:hover {
+    color: #16a085;
+}
+
+.fibo-control-wrapper .fibo-control .swiper-button-next:after,
+.fibo-control-wrapper .fibo-control .swiper-button-prev:after {
+    font-family: 'squarespace-ui-font';
+}
+
+.fibo-control-wrapper .fibo-control .swiper-button-next:after {
+    content: "\e005";
+}
+
+.fibo-control-wrapper .fibo-control .swiper-button-prev:after {
+    content: "\e002";
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 640px) {
+    .fibo-plugin {
+        padding: 15px;
+    }
+
+    .fibo-plugin h3 {
+        font-size: 1.2em;
+    }
+
+    .fibo-plugin p {
+        font-size: 0.9em;
+    }
+
+    .fibo-plugin .image-slide {
+        padding: 20px;
+    }
+}
